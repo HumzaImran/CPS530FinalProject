@@ -39,7 +39,6 @@ h2 {
   cursor: pointer;
   border-radius: 20px;
   box-shadow: 0 27px 55px 0 rgb(0, 0, 0), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
 }
 
 .weatherLocation{
@@ -49,12 +48,10 @@ h2 {
   justify-content: center;
   padding: 2rem;
   background-color: #e1e811;
-  /* background-color: #fafafa; */
 }
 
 .weatherLocation button{
   background: #080705;
-  /* background: #080705; */
   color:#fff;
   border: 1px solid transparent;
 }
@@ -74,9 +71,11 @@ h2 {
   justify-content: space-around;
   font-size: 100px;
 }
+
 .widget .weatherIcon i {
   padding-top: 30px;
 }
+
 .widget .weatherInfo {
   flex: 0 0 70%;
   height: 40%;
@@ -86,6 +85,7 @@ h2 {
   align-items: center;
   color: white;
 }
+
 .widget .weatherInfo .temperature {
   flex: 0 0 40%;
   width: 100%;
@@ -93,6 +93,7 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
+
 .widget .weatherInfo .description {
   flex: 0 60%;
   display: flex;
@@ -101,14 +102,17 @@ h2 {
   height: 100%;
   justify-content: center;
 }
+
 .widget .weatherInfo .description .weatherCondition {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 100;
 }
+
 .widget .weatherInfo .description .place {
   font-size: 15px;
 }
+
 .widget .date {
   flex: 0 0 30%;
   height: 40%;
@@ -127,6 +131,7 @@ p {
   bottom: 0%;
   right: 2%;
 }
+
 p a {
   text-decoration: none;
   color: #E4D6A7;

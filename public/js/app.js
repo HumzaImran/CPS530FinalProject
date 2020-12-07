@@ -29,7 +29,7 @@ weatherForm.addEventListener('submit', (event) =>{
             }else{
                 if(data.description === "clear sky"){
                     weatherIcon.className = "wi wi-day-sunny"
-        }else if (data.description === "light rain" || data.description === "moderate rain" || data.description === "mist" || data.description === "shower rain" || data.description === "thunderstorm" || data.description === "LIGHT INTENSITY SHOWER RAIN"){
+                }else if (data.description === "light rain" || data.description === "moderate rain" || data.description === "mist" || data.description === "shower rain" || data.description === "thunderstorm" || data.description === "LIGHT INTENSITY SHOWER RAIN"){
                     weatherIcon.className = "wi wi-day-rain"
                 }else if(data.description === "broken clouds" || data.description === "scattered clouds" || data.description === "few clouds" || data.description ==="overcast clouds"){
                     weatherIcon.className = "wi wi-day-cloudy"

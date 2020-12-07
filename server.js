@@ -1,4 +1,3 @@
-//this if statement makes sure we are in development and not production 
 if (process.env.NODE_ENV !== 'production'){
     require('dotenv').config()
 }
@@ -38,9 +37,9 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false}))
 app.use(flash())
 app.use(methodOverride('_method'))
-//session generates a secret key found in the env file to make everything more secure
+
+//session generates a secret key 
 app.use(session({
-    // secret: process.env.SESSION_SECRET,
     secret: "lalallalalala",
     resave:false, 
     saveUninitialized: false
@@ -73,6 +72,7 @@ app.get('/main', checkAuthenticated, (req, res)=> {
         title: "CCPS 530 Weather"
     })
 })
+
 //load weather page
 app.get('/weather', checkAuthenticated, (req, res) =>{
     const address = req.query.address
@@ -116,7 +116,7 @@ app.post('/register', checkNotAuthenticated, async (req, res) =>{
         // Save the new model instance, passing a callback
         user_instance.save(function (err) {
         if (err) return console.log(err);
-        // saved!
+
         });
 
        
