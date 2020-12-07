@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/> <!-- static path for public folder is already set in app.js -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    </head>
+    <body>
+        <div class="main-content">
+            {{!-- <div class="center">{{>header}}</div> --}}
+            <article class="widget">
+                <form class="weatherLocation"><input placeholder="Please enter a city" type = "text"/><button>Seach</button>
+                </form>
+                <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+            </article>
+        </div>
+      
+        <script src="js/app.js"></script> 
+        <style>.btncenter {
+            position: fixed;
+             left:10%:
+        }</style>    
+            <div class="btncenter">
+             <form action="/logout?_method=DELETE" method="POST">
+                <button  class="btn btn-warning" type="submit"> Log Out</button>
+            </form>
+            </div>
+
+          {{!-- <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit"> Log Out</button>
+        </form> --}}
+    </body>
+</html>
